@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="resources/css/2.0page.css" rel="stylesheet"/>
+    <link href="resources/css/footer.css" rel="stylesheet"/>
+    <script type="text/javascript" src="resources/js/2.0page.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <title>Document</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+    * {
+        font-family:"pretendard";
+    }
+        body{
+            padding-bottom: 50px;
+        }
+        
+      #footer_2{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        display: flex;
+        width: 100%;
+      }
+      #footer_1{
+        position: fixed;
+        bottom:0;
+        top: 45%;
+        left: 90%;
+        right: 0;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        align-items:stretch;
+        float:right;
+      }
+      #footer_2,#footer_1:hover{
+        cursor: pointer;
+      }
+        .main{
+            margin: 0 auto;
+        }
+        .d-md-block>h5{
+            text-align: left;
+            font-size: 22px;
+            color: white;
+        }
+        .d-md-block>p{
+            text-align: left;
+            font-size: 38px;
+            font-weight: bold;
+            color: white;
+        }
+        #main_01{
+            width: 100%;
+            height: 600px;
+            position:absolute;
+            
+        }
+        .header{
+            position:absolute;
+        }
+        #main_box1{
+            width: 1030px;
+            height: 600px;
+            margin: 0 15%;           
+        }
+        #main_02{
+            margin-top: 0px;
+            width: 100%;
+            height: 496px;
+        }
+        #second_back{
+            width: 85%;
+            height: 372px;
+            margin: 55px 15%;
+            display: flex;
+        }
+        #second_txt{
+            width: 286px;
+            height: 372px;
+        }
+        #second_slidebox{
+            width: 78%;
+            height:372px
+        }
+        #main_03{
+            background-color: #f1f3f5;
+            margin-top: 0px;
+            width: 100%;
+            height: 1207px;
+        }
+        span{
+            height: 115px;
+            text-align: center;
+            margin: 10% 10%;
+        }
+        h1{
+            margin-top: 0px;
+            font-size: 65px;
+            font-weight: bold;
+        }
+        #third_box{
+            width: 1200px;
+            height: 860px;
+            margin: 0px 15%;
+        }
+        #main_04{
+            border: 1px solid rgba(255, 255, 255, 0);
+            width: 100%;
+            height: 780px;
+            margin-top: 0px;
+            transition: all 2s ease-out;
+            background: #006064;
+            display:block;
+            
+        }
+        #four_box{
+            width: 85%;
+            height: 340px;
+            margin: 15% 15%;
+            display: flex;
+        }
+        #four_txt{
+            width: 358px;
+            height: 198px;
+            margin-top: 5%;
+            
+        }
+        #four_txt>p{
+            font-size: 55px;
+        }
+        #four_slide{
+            background-color: white;
+            width: 340px;
+            height: 340px;
+            margin-left: 20%;
+            border-radius: 20px;
+            overflow: hidden;
+            
+        }
+        #main_05{
+            border: 1px solid rgba(255, 255, 255, 0);
+            background-color: #f1f3f5;
+            width: 100%;
+            height: 968.45px;
+            margin-top: 0px;
+        }
+        #five_txt{
+            width: 100%;
+            height: 200.45px;
+            margin-top: 5%;
+            text-align: center;
+        }
+        #five_txt>h3{
+            color: blue;
+        }
+        #five_txt>h4{
+            margin-top: 50px;
+        }
+        #five_slidebox{
+            height: 442px;
+            width: 100%;
+            margin-top: 5%;
+        }
+        #main_06{
+            border: 1px solid rgba(255, 255, 255, 0);
+            background-color: #f1f3f5;
+            width: 100%;
+            height: 787.66px;
+            margin-top: 0px;
+        }
+        #six_box{
+            width: 80%;
+            height: 510.9px;
+            margin: 5% 10%;
+            display: flex;
+        }
+        #sixul{
+            width: 750px;
+            height: 100%;
+            
+        }
+        #sixqa{
+            width: 750px;
+            height: 100%;
+            margin-left: 10%;
+        }
+        .sixul_list{
+            border: 1px solid black;
+            background-color: white;
+            border-radius: 25px;
+            display: flex;
+            width: 100%;
+            height: 75.87px;
+            margin: 5% auto;
+        }
+        .sixul_list_box{
+            border: 1px solid black;
+            background-color: #ebf5e0;
+            color: #5ad18f;
+            border-radius: 25px;
+            width: 15%;
+            height: 35px;
+            margin-top: 3.5%;
+            margin-left: 3%;
+            text-align:center;
+            line-height: 35px ;
+            font-weight:bold;
+        }
+        .sixul_list_box.boxx1{
+            background-color: #ffdfd4;
+            color: #ff4500;
+        }
+        .sixul_txt_box{
+            width: 80%;
+            height: 35px;
+            margin-left: 2%;
+            margin-top: 3.5%;
+            line-height: 35px;
+            font-weight: 600;
+        }
+        .sixul_txt_box:hover{
+            cursor: pointer;
+        }
+        #main_07{
+            border: 1px solid black;
+            width: 100%;
+            height: 141.6px;
+            margin-top: 0px;
+            background-color: blue;
+        }
+        #seventxtbox{
+            width: 80%;
+            height: 61.6px;
+            margin: 2.5% 10%;
+            background-color: white;
+            display: flex;
+            text-align: center;
+            line-height:61.6px;
+            
+        }
+        .sevenh3{
+            color: blue;
+        }
+        #txt1,#txt2{
+            font-weight: bold;
+            color: black;
+        }
+        #txt3{
+            color: black;
+            font-weight: 500;
+            font-size: smaller;
+        }
+        #txt4{
+            color: lightgray;
+        }
+        #clearbox{
+            width: 22%;
+            height: 61.6px;
+        }
+        .slider-box{position:relative;width:80%; max-width:500px; margin:0px;}
+        ul{
+            list-style:none;
+        }
+        .pro-bar{
+            
+            bottom:0;
+            left:-50px;
+            width:0;
+            height:2px;
+            background: white;
+        }
+        .pro-ani{
+            animation: proBar 5s 1;
+            width:100%;
+        }
+        
+        @keyframes proBar{
+            0%{width:0;}
+            100%{width:100%;}
+        }
+        #main_btn{
+            border: 1px solid white;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0);
+            width: 130px;
+            height: 45px;
+            margin-top: 50px;
+            margin-left: -100px;
+            color: white;
+        }
+        .swiper-slide{
+            border-radius: 20px;
+        }
+        #btn_box{
+            display: flex;
+            margin-top: 30px;
+        }
+        
+        .swiper-pagination {
+            color: white;
+        }
+        
+        
+        .swiper2 {
+            width: 723.6px;
+            height:460px;
+            margin: 50px 25%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .swiper2 .swiper-slide {
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+        }
+        
+        
+        .swiper-button-prevvv::after,
+        .swiper-button-nexttt::after{
+            content: "";
+            display: none;
+        }
+        
+        .swiper-pagination {
+            color: white;
+        }
+        
+        .swiper-button-prevvv,
+        .swiper-button-nexttt {
+            width: 30px;
+            height: 30px;
+            border: 2px solid white;
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            z-index: 1;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-button-prevvv {
+            width: 50px;
+            height: 50px;
+            left: 0px;
+            top: 180px;
+            text-align: center;
+            line-height: 70px;
+        }
+        .swiper-button-nexttt {
+            width:50px;
+            height: 50px;
+            top: 180px;
+            right: 0px;
+        }
+        #small_slide{
+            width: 100%;
+            height: 230px;
+        }
+        .swiper3 {
+            width: 100%;
+            height: 100%;
+            margin-top: 5px;
+            position: relative;
+            overflow: hidden;
+           
+        }
+
+        .swiper3 .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .swiper12 {
+            width: 650px;
+            height:265.18px;
+            float: right;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .swiper12 .swiper-slide {
+            height: 100px;
+            display: flex;
+            
+        }
+        
+        .sixqa_box2{
+            display:flex;
+            width: 100%;
+            margin-left: -20px;
+        }
+        .sixqa_box2>li{
+            flex: 1;
+            height: 216px;
+            
+            border-radius: 25px;
+            margin-top: 3%;
+        }
+        #tt{
+            background-color: #3e8df4;
+        }
+        #tt1{
+            background-color: #FF7F50;
+        }
+        .sixqa_box2>li:not(:last-child){
+            margin-right: 20px;
+        }
+        #sixqa_box2_txt1{
+            width: 80%;
+            height: 35%;
+            margin: 15% 5% 0 5%;
+            color: white;
+        }
+        #sixqa_box2_txt1>h2{
+            font-weight: bold;
+            text-align: center;
+        }
+        #sixqa_box2_txt2>h2{
+            font-weight: bold;
+            text-align: center;
+        }
+        #sixqa_box2_txt2{ 
+            width: 80%;
+            height: 35%;
+            margin: 15% 5% 0 5%;
+            color: white;
+        }
+        #sixqa_box2_img{
+            width: 58px;
+            height: 58px;
+            margin-right: 30px;
+            margin-top: 5%;
+            float: right;
+        }
+        .swiper> :hover{
+            cursor:pointer;
+            .swiper-slide:hover{
+                transform:translateY(-35px);
+
+            }
+        }
+        #footer_2:hover{
+            cursor: pointer;
+        }
+        .swiper2_ms:hover{
+            cursor: pointer;
+        }
+        .material-icons1{
+            transform: rotate(180deg);
+        }
+        #s1:hover{animation: img 6s linear infinite;transform-origin: 50% 50%; cursor: pointer;}
+
+        @keyframes img{
+        100% {
+          transform: rotate(360deg);
+        }
+    }
+    #s2:hover{animation: vibration .1s infinite; cursor: pointer;}
+    @keyframes vibration {
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(-10deg);
+  }
+}
+    #clover{
+        width: 150px;
+        height: 150px;
+    }
+    .btxt{
+        font-size: 20px;
+    }
+    #sixul_txt>h4{
+        font-weight: 500;
+        font-size: large;
+    }
+    .clover{animation: img1 6s linear infinite;transform-origin: 50% 50%; cursor: pointer;}
+
+        @keyframes img1{
+        100% {
+          transform: rotate(360deg);
+        }
+    }
+        </style>
+</head>
+<body>
+    <div class="main" id="main_01">
+        <div class="wrap">
+            <div class="header">
+            </div>
+            <div class="navi">
+                <div>
+                    <a href="main.html">
+                    <img src="https://www.home-learn.co.kr/front/landing/imgs/221024/logo_2.0.jpg" alt="홈런" style="margin-bottom: 20px;">
+                </a>
+            </div>
+                <a href="">
+                    홈런초등
+                </a>
+                <a href="page.html">
+                    AI학습시스템
+                </a>
+                <a href="">
+                    콘텐츠소개
+                </a>
+                <a href="">
+                    리얼후기
+                </a>
+                <a href="">
+                    학습자료실
+                </a>
+                <a href="">
+                    이벤트
+                </a>
+            </div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="https://www.home-learn.co.kr/common/image.do?imgPath=mainconts/mainVisual&imgName=265_1.jpg" class="d-block w-100" height="600px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>
+                            5월,&nbsp;우리들의&nbsp;축제&nbsp;<br>총&nbsp;100가구,&nbsp;400여명&nbsp;참석
+                        </h5>
+                        <p>홈런 팸팸데이</p>
+                        <div style="width: 300px; height: 150px; display: flex;">
+                            <div class="slider-box">
+                                <!-- <ul class="slick-slider">
+                                 </ul> -->
+                                 <div class="pro-bar pro-ani"></div>
+                                 <button type="button" id="main_btn">VIEW MORE</button>    
+                             </div>                             
+                        </div>
+                    </div>
+                    <script>
+                        $(".slick-slider").slick({  
+                            infinite: true , 
+                            slidesToShow: 1, 
+                            slidesToScroll: 1,
+                            autoplay: true, 
+                            arrows:false,
+                            dots:true, 
+                            autoplaySpeed:5000,
+                            speed:1000 , 
+                            pauseOnHover:true
+                        });
+                     </script>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000" style="background-color: aqua;">
+                    <img src="https://www.home-learn.co.kr/common/image.do?imgPath=mainconts/mainVisual&imgName=266_1.png" class="d-block w-100" height="600px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>혜택 알림 신청하고,<br>스타벅스 아메리카노 받자!</h5>
+                      <p>알림 ON,혜택ON</p>
+                      <div style=" width: 300px; height: 150px; ">
+                        <div class="slider-box">
+                            <ul class="slick-slider">
+                             </ul>
+                             <div class="pro-bar pro-ani"></div>
+                             <button type="button" id="main_btn">VIEW MORE</button>      
+                         </div> </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item"data-bs-interval="3000">
+                    <img src="https://www.home-learn.co.kr/common/image.do?imgPath=mainconts/mainVisual&imgName=261_1.png" class="d-block w-100" height="600px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>맞춤형 개인화 학습 서비스<br>자기주도학습을 완성하는 기술력</h5>
+                      <p>홈런AI 소개</p>
+                      <div style="width: 300px; height: 150px; ">
+                        <div class="slider-box">
+                            <ul class="slick-slider">
+                             </ul>
+                             <div class="pro-bar pro-ani"></div> 
+                             <button type="button" id="main_btn">VIEW MORE</button>     
+                         </div> </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000" style="background-color: aquamarine;">
+                    <img src="https://www.home-learn.co.kr/common/image.do?imgPath=mainconts/mainVisual&imgName=264_1.png" class="d-block w-100" height="600px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>오직 자녀의 교육과<br>학습 습관 만들기에만 집중</h5>
+                      <p>학부모님께 전하는 홈런의 진심</p>
+                      <div style="width:300px; height: 150px; ">
+                        <div class="slider-box">
+                            <ul class="slick-slider">
+                             </ul>
+                             <div class="pro-bar pro-ani"></div>  
+                             <button type="button" id="main_btn">VIEW MORE</button>    
+                         </div> </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000" style="background-color: skyblue;">
+                    <img src="https://www.home-learn.co.kr/common/image.do?imgPath=mainconts/mainVisual&imgName=262_1.png" class="d-block w-100" height="600px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>아이스크림에듀<br>국내 교육업계 유일</h5>
+                      <p>iF 디자인 어워드 2023 수상</p>
+                      <div style="width: 300px; height: 150px; ">
+                        <div class="slider-box">
+                            <ul class="slick-slider">
+                             </ul>
+                             <div class="pro-bar pro-ani"></div>  
+                             <button type="button" id="main_btn">VIEW MORE</button>    
+                         </div> </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000" style="background-color: lightgreen">
+                    <img src="https://www.home-learn.co.kr/common/image.do?imgPath=mainconts/mainVisual&imgName=260_1.png" class="d-block w-100" height="600px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>아이스크림 홈런 추천하고<br>백화점 상품권&50,000콘 받으세요!</h5>
+                      <p>지인소개 이벤트</p>
+                      <div style="width: 300px; height: 150px; ">
+                        <div class="slider-box">
+                            <ul class="slick-slider">
+                             </ul>
+                             <div class="pro-bar pro-ani"></div>  
+                             <button type="button" id="main_btn">VIEW MORE</button>    
+                         </div> </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000" style="background-color:lightblue">
+                    <img src="https://www.home-learn.co.kr/common/image.do?imgPath=mainconts/mainVisual&imgName=258_1.png" class="d-block w-100" height="600px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>우리 아이의 소중한 창작물을<br>평생 보관하는 방법,홈런NFT</h5>
+                      <p>평생간직 하면 선물이!</p>
+                      <div style="width: 300px; height: 150px; ">
+                        <div class="slider-box">
+                            <ul class="slick-slider">
+                             </ul>
+                             <div class="pro-bar pro-ani"></div>   
+                             <button type="button" id="main_btn">VIEW MORE</button>   
+                         </div> </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+        </div>
+    </section>
+    <section>
+        <div id="main_02">
+            <div id="second_back">
+                <div id="second_txt">
+                    <img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_habit_tit_4.png">
+                    <div id="btn_box">
+                        <div class="swiper-button-nextt"><img src="https://www.pngmart.com/files/16/Left-Arrow-Icon-PNG-File.png" style="background-color: lightgray; border-radius: 40px;" width="30px; height=30px;"></div>
+                        <div class="swiper-button-prevv"><img src="/img/pngwing.com.png"width="30px; height=30px;"></div>
+
+                    </div>
+                </div>
+                <div id="second_slidebox">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/common/image.do?imgPath=mainconts/mainBanner&imgName=217_1.png" id="one"></div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/common/image.do?imgPath=mainconts/mainBanner&imgName=221_1.jpg" style="border-radius: 30px;"></div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/common/image.do?imgPath=mainconts/mainBanner&imgName=239_1.jpg" style="border-radius: 30px;"></div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/common/image.do?imgPath=mainconts/mainBanner&imgName=267_1.png" style="border-radius: 30px;"></div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/common/image.do?imgPath=mainconts/mainBanner&imgName=220_1.png"></div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/common/image.do?imgPath=mainconts/mainBanner&imgName=222_1.png"></div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/common/image.do?imgPath=mainconts/mainBanner&imgName=256_1.jpg" style="border-radius: 30px;"></div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/common/image.do?imgPath=mainconts/mainBanner&imgName=230_1.jpg" style="border-radius: 30px;"></div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/common/image.do?imgPath=mainconts/mainBanner&imgName=259_1.png" style="border-radius: 30px;"></div>
+                        </div>
+                      </div>
+                      <script>
+                        const swiper = new Swiper('.swiper', {
+                        // Optional parameters
+                        direction: 'horizontal',
+                        loop: true,
+                    
+                        // If we need pagination
+                        pagination: {
+                            el: '.swiper-pagination',
+                        },
+                    
+                        // Navigation arrows
+                        navigation: {
+                            nextEl: '.swiper-button-nextt',
+                            prevEl: '.swiper-button-prevv',
+                        },
+                    
+                        // And if we need scrollbar
+                        scrollbar: {
+                            el: '.swiper-scrollbar',
+                        },
+                        slidesPerView : '3',
+                        spaceBetween : 80,
+                        loop : true,
+                        autoplay : {  // 자동 슬라이드 설정 , 비 활성화 시 false
+
+                            delay : 1500,   // 시간 설정
+
+                            disableOnInteraction : false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
+
+                            },
+                            autoHeight : true,
+                            resistance : false,
+                        });
+                      </script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="main_03">
+            <div id="spanbox">
+                <span>
+                    <h2>오늘의 성적을 넘어</h2>
+                    <h1>아이와 평생 함께할 습관을 만듭니다</h1>
+                </span>
+            </div>
+            <div id="third_box">
+                <div id="big_slide">
+                    <div class="swiper2">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_info_slide2_1.png" style="width: 723.6px;
+                            height:424.8px;"><b class="btxt">목표를 정하는 습관 | 내 아이 맞춤,오늘의 학습</b></div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_info_slide1_1.png" style="width: 723.6px;
+                            height:424.8px;"><b class="btxt">선물이 도착했어요! 홈런북 도착♥</b></div>
+                          <div class="swiper-slide swiper2_ms"><img src="https://www.home-learn.co.kr/common/image.do?imgPath=mainconts/YU&imgName=204_1.png" style="width: 723.6px;
+                            height:424.8px;"><b class="btxt">공부가 좋아하는 습관,아이스크림 홈런2.0</b></div>
+                          
+                        </div>
+                        <div class="swiper-button-prevvv">
+                            <div class="material-icons1"><img src="/img/pngwing.com.png" style="width: 52px; height: 52px;"></div>
+                          </div>
+                          <div class="swiper-button-nexttt">
+                            <div class="material-icons"><img src="/img/pngwing.com.png" style="width: 50px; height: 52px;"></div>
+                          </div>
+                      </div>
+                </div>
+                <div id="small_slide">
+                    <div class="swiper3">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_info_slide2_2.png" style="width:219.6px; height:128.7px;">
+                           <b>호기심을 갖는 습관</b>오감을 즐기는 공부,학습습관</div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_info_slide2_3.png" style="width:219.6px; height:128.7px;">
+                        <b>질문을 하는 습관</b>실시간 질문/답변,AI튜터 아이뚜루</div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_info_slide2_4.png" style="width:219.6px; height:128.7px;">
+                        <b>성취감을 느끼는 습관</b>공부하고,기부하는 내 나무숲</div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_info_slide2_5.png" style="width:219.6px; height:128.7px;">
+                        <b>깊이 파고드는 습관</b>내 아이 꼭맞춤,AI추천학습</div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_info_slide1_2.png" style="width:219.6px; height:128.7px;">
+                            <b>열공의지 뿜뿜오는<br>홈런북 케이스</b></div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_info_slide1_3.png" style="width:219.6px; height:128.7px;">
+                            <b>자유자재로 형태 조절<br>가능한 홈런북</b></div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_info_slide1_4.png" style="width:219.6px; height:128.7px;">
+                            <b>홈런북 하나면<br>공부환경 세팅 끝!</b></div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_info_slide1_5.png" style="width:219.6px; height:128.7px;">
+                            <b>보기만 해도<br>맘이 편해지는 디자인</b></div>
+                          <div class="swiper-slide swiper2_ms"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_info_slide3_2.png" style="width:219.6px; height:128.7px;">
+                            <b>공부,못하는 아이는 있어도<br>못하고 싶은 아이는 없다</b></div>
+                          <div class="swiper-slide swiper2_ms"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_info_slide3_3.png" style="width:219.6px; height:128.7px;">
+                            <b>공부는 왜 맨날<br>미움을 받아야 할까?</b></div>
+                          <div class="swiper-slide swiper2_ms"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_info_slide3_4.png" style="width:219.6px; height:128.7px;">
+                            <b>엄마들은 왜<br>괴물이 되어야 할까?</b></div>
+                          <div class="swiper-slide swiper2_ms"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_info_slide3_5.png" style="width:219.6px; height:128.7px;">
+                            <b>점수를 묻는게 언제부터<br>인사가 되었을까?</b></div>
+                        </div>
+                </div>
+                </div>
+                <script>
+                    new Swiper('.swiper2', {
+  autoplay: {
+    delay: 5000
+  },
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  centeredSlides: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    prevEl: '.swiper-button-prevvv',
+    nextEl: '.swiper-button-nexttt'
+  }
+})
+new Swiper('.swiper3', {
+  autoplay: {
+    delay: 5000
+  },
+  slidesPerGroup : 4,
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 10,
+  centeredSlides: false,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    prevEl: '.swiper-button-prevvv',
+    nextEl: '.swiper-button-nexttt'
+  }
+})
+new Swiper('.swiper4', {
+  autoplay: {
+    delay: 5000
+  },
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  centeredSlides: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    prevEl: '.swiper-button-prevvv',
+    nextEl: '.swiper-button-nexttt'
+  }
+})
+                </script>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="main_04">
+            <div id="four_box">
+                <img src="/img/clover.png" class="clover" style="width: 60px; height: 60px;">
+                <div id="four_txt">
+                    <p>홈런북과 함께!<br><b>엉덩이의 힘으로<br>공부 습관을!</b><img src="/img/clover.png" style="width: 60px; height: 60px;" class="clover"></p>
+                </div>
+                <div id="four_slide">
+                    <div class="swiper15">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_device_slide6.png"></div>
+                            <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_device_slide2.png"></div>
+                            <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_device_slide3.png"></div>
+                            <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_device_slide5.png"></div>
+                            <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/img_device_slide5.png"></div>
+                        </div>
+                    </div>
+                </div>
+                <img src="/img/clover.png" id="clover" class="clover">
+            </div>
+        </div>
+        <script>
+            new Swiper('.swiper15', {
+  autoplay: {
+    delay: 5000
+  },
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  centeredSlides: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+}); 
+var bg = document.getElementById("main_04");
+
+setInterval(function(){
+  var color = Math.random()*0xffffff;
+  color = parseInt(color);
+  color = color.toString(16);
+  
+  bg.style.background = "#" + color;
+  
+},5000);
+        </script>
+    </section>
+    <section>
+        <div id="main_05">
+            <div id="five_txt">
+                <h3>진짜 1등은 단 하나</h3>
+                <h1>대한민국 121만 학부모의 선택</h1>
+                <h4>가장 많은 초등학생들이 경험한 아이스크림 홈런</h4>
+            </div>
+            <div id="five_slidebox">
+                    <div class="swiper5" style="overflow: hidden; margin-left: 5%;">
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide"><img src="/img/이미지1.PNG" style="width: 442px; height: 442px; border-radius: 30px;"></div>
+                          <div class="swiper-slide"><img src="/img/이미지2.PNG" style="width: 442px; height: 442px; border-radius: 30px;"></div>
+                          <div class="swiper-slide"><img src="/img/이미지3.PNG" style="width: 442px; height: 442px; border-radius: 30px;"></div>
+                          <div class="swiper-slide"><img src="/img/이미지4.PNG" style="width: 442px; height: 442px; border-radius: 30px;"></div>
+                        </div>
+                      </div>
+                      <script>
+                        const swiper5 = new Swiper('.swiper5', {
+                        // Optional parameters
+                        direction: 'horizontal',
+                        loop: true,
+                    
+                        // If we need pagination
+                        pagination: {
+                            el: '.swiper-pagination',
+                        },
+                    
+                        // Navigation arrows
+                        navigation: {
+                            nextEl: '.swiper-button-nextt',
+                            prevEl: '.swiper-button-prevv',
+                        },
+                    
+                        // And if we need scrollbar
+                        scrollbar: {
+                            el: '.swiper-scrollbar',
+                        },
+                        slidesPerView : '3',
+                        spaceBetween : 80,
+                        loop : true,
+                        autoplay : {  // 자동 슬라이드 설정 , 비 활성화 시 false
+
+                            delay : 1500,   // 시간 설정
+
+                            disableOnInteraction : false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
+
+                            },
+                            autoHeight : true,
+                            resistance : false,
+                        });
+                      </script>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="content6">
+            <div class="text">
+                <span class="small yellow">리얼 학습 후기</span> <br>
+                <h2>학생도, 학부모도! <br>
+                    <b>모두가 만족하는 아이스크림 홈런</b></h2>
+                </div>
+            <div class="back">
+                <div class="slick">
+                    <div class="review">
+                        <div class="reviewContent">
+                            <div class="star"></div>
+                            <h2>완벽하게 <br>
+                                시험 대비했어요</h2>
+                            <h4 class="parent">3학년 최서영 부모</h4>
+                            틀린 문제는 선생님 설명 듣고,<br>
+                            오답노트로 한 번 더 풀 수 있더라고요.<br>
+                            이렇게 반복해서 결국 내 것으로 만들어<br>
+                            주는 게 아이스크림 홈런의 <br>
+                            큰 장점이 아닌가 싶어요
+                        </div>
+                        <div class="more">더보기 ></div>
+                    </div>
+                    <div class="review">
+                        <div class="reviewContent">
+                            <div class="star"></div>
+                            <h2>아이스크림 홈런<br>
+                                덕분에 편해졌어요
+                            <h4 class="parent">1학년 이예지 부모</h4>
+                            AI생활기록부를 통해 아이가<br>
+                            실시간으로 학습을 잘하고 있는지,<br>
+                            오늘은 어떤 수업을 했는지<br>
+                            체크할 수 있거든요.<br>
+                            덕분에 아이가 잘하고 있구나,<br>
+                            더 믿고 응원해줄 수 있었어요
+                        </div>
+                        <div class="more">더보기 ></div>
+                    </div>
+                    <div class="review">
+                        <div class="reviewContent">
+                            <div class="star"></div>
+                            <h2>홈런 중간고사로 <br>
+                                실력 체크했어요
+                            <h4 class="parent">1학년 장새별 부모</h4>
+                            아이스크림 홈런에는 기본 학습기<br>
+                            외에 탑시크릿 문제집을<br>
+                            학기별/과목별로 제공해주어<br>
+                            초등 수행평가 대비하기가 <br>
+                            참 좋아요.
+                        </div>
+                        <div class="more">더보기 ></div>
+                    </div>
+                    <div class="review">
+                        <div class="reviewContent">
+                            <div class="star"></div>
+                            <h2>홈런으로 아이 창찬이 <br>
+                                쉬워졌어요
+                            <h4 class="parent">1학년 김수하 부모</h4>
+                            AI생활기록부를 보면 아이의 <br>
+                            학습 내용이 잘 분석되어 있어서<br>
+                            자세한 칭찬을 해줄 수가 있어서 좋아요<br>
+                            월간부터 주간까지, 학습 분석을<br>
+                            한 눈에 볼 수 있는데 지난 달에는<br>
+                            무려 18시간이나 학습을 했더라고요!
+                        </div>
+                        <div class="more">더보기 ></div>
+                    </div>
+                    <div class="review">
+                        <div class="reviewContent">
+                            <div class="star"></div>
+                            <h2>모르는 문제도 <br>
+                                완벽하게 내 것으로!
+                            <h4 class="parent">2학년 안지환 부모</h4>
+                            문제집으로 공부했다면<br>
+                            한 번 풀고 끝나버려<br>
+                            다시 공부하기 힘들었을텐데,<br>
+                            홈런은 문제들을 이해할 때까지<br>
+                            계속 학습할 수 있다는 점이<br>
+                            정말 좋았어요
+                        </div>
+                        <div class="more">더보기 ></div>
+                    </div>
+                    <div class="review">
+                        <div class="reviewContent">
+                            <div class="star"></div>
+                            <h2>홈런으로 실점처럼<br>
+                                시험 대비해요
+                            <h4 class="parent">2학년 박유빈 부모</h4>
+                            홈런을 하기 전에는<br>
+                            따로 문제집을 사서 공부했는데,<br>
+                            아이가 잘하고 있는지 늘 알쏭달쏭<br>
+                            했었어요. 그런데 홈런 시작하고<br>
+                            나서 걱정이 사라졌어요
+                        </div>
+                        <div class="more">더보기 ></div>
+                    </div>
+                    <div class="review">
+                        <div class="reviewContent">
+                            <div class="star"></div>
+                            <h2>오답부터 보충까지,<br>
+                                홈런 하나면 끝!
+                            <h4 class="parent">2학년 김예은 부모</h4>
+                            같은 문제를 풀어도 숫자만 바뀌면<br>
+                            못 푸는 경우가 종종 발생하는데,<br>
+                            홈런은 오답을 체크하고<br>
+                            비슷한 문제를 풀어보며<br>
+                            개념을 정확하게 이해하고<br>
+                            마무리하는 게 정말 좋았어요
+                        </div>
+                        <div class="more">더보기 ></div>
+                    </div>
+                    <div class="review">
+                        <div class="reviewContent">
+                            <div class="star"></div>
+                            <h2>홈런 선생님,<br>
+                                정말 감사해요~
+                            <h4 class="parent">4학년 하윤솔 부모</h4>
+                            아이가 힘들고 어려워할 때<br>
+                            홈런 선생님의 도움을 많이 받고 있어요.<br>
+                            아이가 부족한 과목은 한 번 더 볼 수<br>
+                            있도록 조율해주시고, 체계적으로<br>
+                            관리를 해주시니까 느슨해졌다가도<br>
+                            다시 열심히 하더라고요.
+                        </div>
+                        <div class="more">더보기 ></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section>
+        <div id="main_06">
+            <div id="six_box">
+                <div id="sixul">
+                    <div id="sixul_txt">
+                        <h1>공지사항</h1>
+                        <h4>아이스크림 홈런 소식을 전해드립니다.</h4>
+                    </div>
+                    <div class="sixul_list">
+                        <div class="sixul_list_box boxx1">공지</div>
+                        <div class="sixul_txt_box">아이스크림 홈런 서비스 점검 안내_5/23(화)</div>
+                    </div>
+                    <div class="sixul_list">
+                        <div class="sixul_list_box">소식</div>
+                        <div class="sixul_txt_box">[언론보도] 아이스크림에듀, 가정의 달 맞이 고...</div>
+                    </div>
+                    <div class="sixul_list">
+                        <div class="sixul_list_box">소식</div>
+                        <div class="sixul_txt_box">[언론보도] 아이스크림에듀, 위인 통해 소프트스...</div>
+                    </div>
+                    <div class="sixul_list">
+                        <div class="sixul_list_box">소식</div>
+                        <div class="sixul_txt_box">[언론보도] 아이스크림에듀, 과기부 과정 중심 평가 AI...</div>
+                    </div>
+                </div>
+                <div id="sixqa">
+                    <div class="swiper12">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/bnr_expo.jpg" style="width: 100%;
+                            height:265.68px; border-radius: 25px;"></div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/bnr_solution.png" style="width: 100%;
+                            height:265.68px; border-radius: 25px;"></div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/bnr_creationhall.png" style="width: 100%;
+                            height:265.68px; border-radius: 25px;"></div>
+                          <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/main_2023/bnr_newsroom.png" style="width: 100%;
+                            height:265.68px; border-radius: 25px;"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="sixqa_box">
+                        <ul class="sixqa_box2" >
+                            <li id="tt">
+                                <div id="sixqa_box2_txt1" >
+                                    <h2>홈런 선생님<br>지원하러가기</h2>
+                                </div>
+                                <div id="sixqa_box2_img">
+                                    <img src="https://www.home-learn.co.kr/front/imgs/main_2023/i_bnr_flower.png" id="s1">
+                                </div>
+                            </li>
+                            <li id="tt1">
+                                <div id="sixqa_box2_txt2">
+                                    <h2>제휴 및 단체<br>문의하기</h2>
+                                </div>
+                                <div id="sixqa_box2_img">
+                                    <img src="https://www.home-learn.co.kr/front/imgs/main_2023/i_bnr_phone.png" id="s2">
+                                </div>
+                            </li>
+                        </ul>           
+                    </div>
+                <script>
+                    new Swiper('.swiper12', {
+  autoplay: {
+    delay: 5000
+  },
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  centeredSlides: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    prevEl: '.swiper-button-prevvv',
+    nextEl: '.swiper-button-nexttt'
+  }
+})
+                </script>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="main_07">
+            <div id="seventxtbox">
+                <div id="clearbox"></div>
+                <p id="txt1">홈런&nbsp;</p><p class="sevenh3">원프라이스</p>&nbsp;<p id="txt2">캠페인</p>
+                &nbsp;&nbsp;&nbsp;<p id="txt4">|</p>&nbsp;&nbsp;&nbsp;<p id="txt3">홈런은 모든 고객에게 동일한 혜택을 제공합니다. 진심을 담은 교육으로 보답합니다.</p>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <div class="footer">
+        <div class="footer_item1">
+            <div class="item_list"><img src="https://www.home-learn.co.kr/front/imgs/common/logo_header_2023.svg" width="100%"></div>
+            <div class="item_list">
+                <h6>홈런 고객감동센터</h6><br>
+                <b>학습 및 A/S 문의</b> <br><br>
+                <span>[평 일] 10:00 ~ 22:00 <br>
+                [토요일] 10:00 ~ 17:00<br>
+                [일요일/공휴일] 휴무</span>
+                
+                
+            </div>
+            <div class="item_list"><h6>1544-0910</h6></div>
+            <div class="line"></div>
+            <div class="item_list">
+                <div class="flex">
+                    <img src="https://www.home-learn.co.kr/front/imgs/common/ico_katalk_ch.png" width="40px;">
+                    <div style="line-height: 40px;">
+                        <h6>카톡 채널문의</h6>
+                    </div>
+                </div>
+                <span>카카오톡 검색창에 아이스크림 홈런을<br>
+                검색하여 1:1 문의<br><br>
+                [평 일] 10:00 ~ 21:00 <br>
+                [주말/공휴일] 휴무</span>
+            </div>
+            <div class="item_list qr">
+                <img src="https://www.home-learn.co.kr/front/imgs/common/qrcode_katalk_link.png"><br>
+                <span><a href="">문의 바로가기</a></span>
+            </div>
+            <div class="item_list link">
+                <div class="flex">
+                    <img src="https://www.home-learn.co.kr/front/imgs/common/ico_good_parents_app.png">
+                    <div>
+                        <h6>홈런좋은부모</h6>
+                        <span><a href="">자세히 보기</a></span> <br>
+                    </div>
+                </div>
+                <img src="https://www.home-learn.co.kr/front/imgs/common/icon_sns_yt.svg">
+                <img src="https://www.home-learn.co.kr/front/imgs/common/icon_sns_ins.svg">
+                <img src="https://www.home-learn.co.kr/front/imgs/common/icon_sns_fac.svg">
+                <img src="https://www.home-learn.co.kr/front/imgs/common/icon_sns_twitter.svg">
+                <img src="https://www.home-learn.co.kr/front/imgs/common/icon_sns_blog.svg">
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+      <div id="footer_1">
+        <a href="2.0page.html"><img src="https://www.home-learn.co.kr/front/imgs/common/quick/btn_left_float_free.png" style="width:150px; height:150px"></a>
+        <img src="https://www.home-learn.co.kr/front/imgs/common/quick/btn_left_float_pay.png" style="width:150px; height:150px">
+      </div>
+      
+    </div>
+    <div id="footer_2">
+      <img src="https://www.home-learn.co.kr/front/imgs/common/quick/btn_footer_float_free.png" style="width: 50%;">
+      <img src="https://www.home-learn.co.kr/front/imgs/common/quick/btn_footer_float_pay.png" style="width: 50%;">
+    </div>
+  </footer>
+</html>

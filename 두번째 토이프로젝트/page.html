@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hr.css">
+    <link rel="stylesheet" href="/footer.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+</head>
+<body>
+        <div id =header1-wrap>
+            <div id = "header1">
+                <div id="header-left">
+                    <li>
+                        <a>
+                            <span>리틀홈런</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>홈런초등</span>
+                        </a>
+                    </li>
+                    <li> 
+                        <a>
+                            <span>홈런중등</span>
+                        </a>
+                    </li>
+                    <li> 
+                        <a>
+                            <span>홈런좋은부모 앱</span>
+                        </a>
+                    </li>
+                    <li> 
+                        <a>
+                            <span>뉴스룸</span>
+                        </a>
+                    </li>
+                </div>
+                <div id="header-right">
+                    <li>
+                        <a>
+                            <span>로그인</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>회원가입</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>고객센터</span>
+                        </a>
+                    </li>
+                </div>
+             </div>
+        </div>
+        <div id="header2-wrap">
+            <div id =header2>
+                <div id = "header2-ctn">
+                    <a href="main.html"><div class="logo"></div></a>
+                    <nav id="gnbwrap"class>
+                        <ul id="gnb">
+                            <div id="ctn">
+                            </div>
+                            <li class="has_child">
+                                <a>
+                                    <span class="block">홈런초등</span>
+                                </a>
+                                <ul class="none">
+                                    <li>
+                                        <span>홈런 초등 소개</span>
+                                    </li>
+                                    <li>
+                                        <span>홈런 학습기/교재</span>
+                                    </li>
+                                    <li>
+                                        <span>홈런프렌즈 소개</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has_child">
+                                <a>
+                                    <span class="block">홈런AI</span>
+                                </a>
+                                <ul class="none">
+                                    <li>
+                                        <span>홈런AI소개</span>
+                                    </li>
+                                    <li>
+                                        <span>AI튜터</span>
+                                    </li>
+                                    <li>
+                                        <span>AI생활기록부</span>
+                                    </li>
+                                    <li>
+                                        <span>AI챌린지</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has_child">
+                                <a>
+                                    <span class="block">콘텐츠소개</span>
+                                </a>
+                                <ul class="none">
+                                    <li>
+                                        <span>학교공부 예·복습</span>
+                                    </li>
+                                    <li>
+                                        <span>평가학습</span>
+                                    </li>
+                                    <li>
+                                        <span>영어완성</span>
+                                    </li>
+                                    <li>
+                                        <span>수학완성</span>
+                                    </li>
+                                    <li>
+                                        <span>특별학습</span>
+                                    </li>
+                                    <li>
+                                        <span>글로벌리더십</span>
+                                    </li>
+                                    <li>
+                                        <span>블록코딩</span>
+                                    </li>
+                                    <li>
+                                        <span>홈런북카페</span>
+                                    </li>
+                                    <li>
+                                        <span>예비초 7세</span>
+                                    </li>
+                                    <li>
+                                        <span>리틀홈런 4-6세</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="block">리얼후기</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="block">학습자료실</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="block">이벤트</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        <script>
+             
+             $(function(){
+             $('.none>li').hover(function(){
+                $(this).css({color: '#ff6833'})
+                 },function(){
+                $(this).css({color: 'black'})
+             })
+            })
+             //네비바
+             $(function(){
+             $('#gnb').mouseover(function(){
+                $('.none').css({display:'block'})
+                $('#ctn').css({display:'block' })
+                 })
+                 })
+             $('#gnb').mouseout(function(){
+                $('.none').css({display:'none'})
+                $('#ctn').css({display:'none'})
+             })
+             
+        </script>
+        </div>
+        <div id="header3">
+            
+        </div>
+    </div>
+    <div id="body1">
+        <div id="ctn">
+            <div id="ctn-ani">
+                <img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_top.png">
+                <span class="object">
+                    <img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_top_object.png">
+                </span>    
+            </div>
+        </div>
+    </div>
+    <div id="body2">
+        <div id="ctn-wrap">
+            <div class="ctn1">
+                <div class="slide1-container">
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_1.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_2.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_3.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_4.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_5.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_6.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_7.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_1.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_2.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_3.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_4.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_5.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_6.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_7.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_1.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_2.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_3.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_4.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_5.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_6.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_7.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_1.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_2.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_3.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_4.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_5.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_6.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_7.png"></div>
+                </div>
+
+                 <!-- <div class="swiper mySwiper">
+                //     <div class="swiper-wrapper">
+                //       <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_1.png"></div>
+                //       <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_2.png"></div>
+                //       <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_3.png"></div>
+                //       <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_4.png"></div>
+                //       <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_5.png"></div>
+                //       <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_6.png"></div>
+                //       <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_7.png"></div>
+                //       <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_1.png"></div>
+                //       <div class="swiper-slide"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_2.png"></div>
+                //     </div>
+                //     <div class="swiper-pagination"></div>
+                //   </div>
+                
+                //   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+                
+                //   <script>
+                //     var swiper = new Swiper(".mySwiper", {
+                //       slidesPerView: 3,
+                //       spaceBetween: 30,
+                //       freeMode: true,
+                //       pagination: {
+                //         el: ".swiper-pagination",
+                //         clickable: true,
+                //       },
+                //     });
+                //   </script> -->
+            </div>
+            <div class="ctn2">
+                <div class="slide2-container">
+                    <div class="slide2-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_1.png"></div>
+                    <div class="slide2-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_2.png"></div>
+                    <div class="slide2-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_3.png"></div>
+                    <div class="slide2-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_4.png"></div>
+                    <div class="slide2-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_5.png"></div>
+                    <div class="slide2-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_6.png"></div>
+                    <div class="slide2-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_7.png"></div>
+                    <div class="slide2-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_1.png"></div>
+                    <div class="slide2-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_2.png"></div>
+                    <div class="slide2-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_3.png"></div>
+                    <div class="slide2-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_4.png"></div>
+                    <div class="slide2-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_5.png"></div>
+                    <div class="slide2-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_6.png"></div>
+                    <div class="slide2-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_7.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_1.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_2.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_3.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_4.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_5.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_6.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_7.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_1.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_2.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_3.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_4.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_5.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_6.png"></div>
+                    <div class="slide1-image"><img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec1_slide1_7.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="body3"style="background-image: url(https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec3_bg.png)">
+        <div class="hd" id="hd">
+            <div class="hd-fl">
+                <div class="hd-1">
+                    <a>
+                        <li>
+                            <h4>
+                                <b>매일 홈런하는 습관</b><br>
+                                    <span id="co1">습관나무</span>
+                            </h4>
+                        </li>
+                    </a>
+                </div>
+                <div class="hd-2">
+                    <a>
+                        <li>
+                            <h4>
+                                <b>내게 필요한 도서추천</b><br>
+                                <span id="co2">한글 독서습관 챌린지</span>
+                            </h4>
+                        </li>
+                    </a>
+                </div>
+                <div class="hd-3">
+                    <a>
+                        <li>
+                            <h4>
+                                <b>딥러닝 기술 기반</b><br>
+                                <span id="co3">수학의 세포들 챌린지</span>
+                            </h4>
+                        </li>
+                    </a>
+                </div>
+                <div class="hd-4">
+                    <a>
+                        <li>
+                            <h4>
+                                <b>미션 성공 보상현황</b><br>
+                                <span id="co4">내 나무 숲</span>
+                            </h4>
+                        </li>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="body3-wrap">
+            <div id="ctn-text">
+                <h1>AI로 공부하는 시대!</h1>
+                <span>
+                    아이스크림 홈런이 완벽하게 업그레이드 된<br>
+                    <b>AI튜터로 진짜 학습을 리드합니다.</b>
+                </span>
+            </div>
+            <div id="ctn-nav" >
+                <ul class="tab-nav">
+                    <li>
+                        <img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/icon_sec3_box1.png">
+                        <a>
+                            <h4>
+                                <b>매일 홈런하는 습관</b><br>
+                                <span id="co1">습관나무</span>
+                            </h4>
+                            <small class="sl-tn">
+                                학습 습관을 만들어주는
+                                <br>
+                                홈런 미션
+                            </small>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/icon_sec3_box2.png">
+                        <a>
+                            <h4>
+                                <b>내게 필요한 도서추천</b><br>
+                                <span id="co2">한글 독서습관 챌린지</span>
+                            </h4>
+                            <small>
+                                문해력을 키우는
+                                <br>
+                            독서습관 챌린지
+                            </small>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/icon_sec3_box3.png">
+                        <a>
+                            <h4>
+                                <b>딥러닝 기술 기반</b><br>
+                                <span id="co3">수학의 세포들 챌린지</span>
+                            </h4>
+                            <small>
+                                추천 알고리즘을 통해
+                                <br>
+                                개인 맞춤 문항 제공
+                            </small>
+                        </a>
+                    </li>
+                    <li>
+                        <img src =https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/icon_sec3_box4.png>
+                        <a>
+                            <h4>
+                                <b>미션 성공 보상현황</b><br>
+                                <span id="co4">내 나무 숲</span>
+                            </h4>
+                            <small>
+                                매일 홈런 습관 및 챌린지
+                                <br>
+                                보상현황 및 학습동기부여
+                            </small>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+<script>
+    $(function(){
+        $(document).ready(function(){
+            var offset = $('.sl-tn').offset();
+            $(window).scroll(function(){
+                if($(document).scrollTop()>offset.top){
+                    //$('.tab-nav').addClass('fixed');
+                   //$('.hd').addClass( 'fixed1');
+                     //$('.tab-nav').hide();
+                     $('.hd').css({display:'block'})
+                } else{
+                    //$('.tab-nav').removeClass('fixed');
+                     $('.tab-nav').show();
+                    $('.hd').css('display','none')
+                }
+            })
+        })
+    });
+</script>                
+    </div>
+    <div id="body4">
+        <div id="ctn">
+            <div id="ctn-text">
+                <h4>스스로 재미있게 좋은 습관을 만들 수 있도록 도와주는</h4>
+                <h2>
+                    매일 홈런하는 습관,   
+                    <span>습관나무</span>
+                </h2>
+                <span>
+                    좋은 성적을 받기 위해 가장 중요한 요소는
+                    '스스로 공부하는 습관'입니다.
+                </span>
+                <span>좋아서 하는 공부가 되기 위한 시작, 습관나무 입니다.</span>
+            </div> 
+            <div class="box" role="toolbar">
+                <div class="box-slider">
+                    <ul class="fade">
+                        <li><img src= "https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec4_slide1.png"></li>       
+                    </ul>
+                    <ul class="fade">
+                        <li><img src= "https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec4_slide2.png"></li>       
+                    </ul>
+                    <ul class="fade">
+                        <li><img src= "https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec4_slide3.png"></li>       
+                    </ul>
+                    <ul class="fade">
+                        <li><img src= "https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec4_slide4.png"></li>       
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.box-slider').slick({
+                    loop:100,
+                    autoplay:true,
+                    autoplayspeed:1000,
+                    dots: true, 
+                    infinite: true,
+                    speed: 500,
+                    fade: true,
+                    cssEase: 'linear'
+                });
+            });
+        </script>
+    </div>
+    <div id="body5">
+        <div id="ctn">
+            <img src=https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/icon_sec5_flower.png>
+            <div id="ctn-text">
+                <h4>읽기 수준에 맞는 도서를 추천해주는</h4>
+                <h2>한글 독서습관 챌린지</h2>
+                <img src=https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec5_box.png>
+                <div class="box">
+                    <span>1단계부터 10단계로 구성된 한글 독서습관 챌린지는 학생의 읽기 수준에 맞는 도서를 추천합니다.</span>
+                    <span>각 단계마다 <b>미션을 완료하면 보상 아이템을 제공</b>하고, 해당 아이템은 ‘내 나무 숲’에서 한 눈에 확인할 수 있습니다.</span>
+                    <span>이어보기 기능을 제공하여 꾸준히 독서할 수 있는 습관을 만들어줍니다.</span>
+                    <span>단계를 성공할 때마다 제공되는 보상을 통해 <b>성취감을 느끼고, 독서의 즐거움을 배워</b>갑니다</span>
+                    <i class="box-icon">
+                        <img src=https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/icon_sec5_animal.png>
+                    </i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="body6">
+        <div id="ctn">
+            <img src="https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/icon_sec7_clover.png">
+            <div id="ctn-text">
+                <h4>습관나무와 챌린지가 모여</h4>
+                <h2>미션 성공 보상현황을<br>
+                    <span>한 눈에 보여주는 내 나무 숲</span>
+                </h2>
+                <div class="box">
+                    
+                </div>
+                <span>
+                    매일 홈런하는 습관과 학습자의 학습 유형 분석을 기반으로 제공되는 챌린지 활동을 통해
+                    <br><b><h>자기주도학습 습관 형성 및 보상</h>을 확인할 수 있습니다.</b>
+                </span>
+                <small>
+                    * 매일 홈런 하는 습관은 나무의 성장을, 한글 독서습관 챌린지 미션 달성 시 단계별로 동물을,<br>
+                    수학의 세포들 챌린지 에서는 나무가 춤추게 만드는 음악을 획득합니다.
+                </small>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer">
+        <div class="footer_item1">
+            <div class="item_list"><img src="https://www.home-learn.co.kr/front/imgs/common/logo_header_2023.svg" width="100%"></div>
+            <div class="item_list">
+                <h6>홈런 고객감동센터</h6><br>
+                <b>학습 및 A/S 문의</b> <br><br>
+                <span>[평 일] 10:00 ~ 22:00 <br>
+                [토요일] 10:00 ~ 17:00<br>
+                [일요일/공휴일] 휴무</span>
+                
+                
+            </div>
+            <div class="item_list"><h6>1544-0910</h6></div>
+            <div class="line"></div>
+            <div class="item_list">
+                <div class="flex">
+                    <img src="https://www.home-learn.co.kr/front/imgs/common/ico_katalk_ch.png" width="40px;">
+                    <div style="line-height: 40px;">
+                        <h6>카톡 채널문의</h6>
+                    </div>
+                </div>
+                <span>카카오톡 검색창에 아이스크림 홈런을<br>
+                검색하여 1:1 문의<br><br>
+                [평 일] 10:00 ~ 21:00 <br>
+                [주말/공휴일] 휴무</span>
+            </div>
+            <div class="item_list qr">
+                <img src="https://www.home-learn.co.kr/front/imgs/common/qrcode_katalk_link.png"><br>
+                <span><a href="">문의 바로가기</a></span>
+            </div>
+            <div class="item_list link">
+                <div class="flex">
+                    <img src="https://www.home-learn.co.kr/front/imgs/common/ico_good_parents_app.png">
+                    <div>
+                        <h6>홈런좋은부모</h6>
+                        <span><a href="">자세히 보기</a></span> <br>
+                    </div>
+                </div>
+                <img src="https://www.home-learn.co.kr/front/imgs/common/icon_sns_yt.svg">
+                <img src="https://www.home-learn.co.kr/front/imgs/common/icon_sns_ins.svg">
+                <img src="https://www.home-learn.co.kr/front/imgs/common/icon_sns_fac.svg">
+                <img src="https://www.home-learn.co.kr/front/imgs/common/icon_sns_twitter.svg">
+                <img src="https://www.home-learn.co.kr/front/imgs/common/icon_sns_blog.svg">
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer_1">
+          <a href="2.0page.html"><img src="https://www.home-learn.co.kr/front/imgs/common/quick/btn_left_float_free.png" style="width:150px; height:150px"></a>
+          <img src="https://www.home-learn.co.kr/front/imgs/common/quick/btn_left_float_pay.png" style="width:150px; height:150px">
+        </div>
+</footer>
+</html>

@@ -1,0 +1,619 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#header{
+    width: 100%;
+    height: 161px;
+}
+#header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    height: 42px;
+    line-height: 42px;
+    margin: 0 351px;
+    border-bottom: 1px solid #f1f3f5;
+}
+#header1{
+    position: relative;
+    width: 1200px;
+}
+#header-left{
+    display: flex;
+    font-size: 13px;
+    color: #c2c2cb;
+    
+}
+#header-left li:first-child{
+    margin-left: 0;
+}
+#header-left li{
+    margin: 0 10px;
+}
+#header-right{
+    font-size: 13px;
+    display: flex;
+}
+#header-right li{
+    margin: 0 10px;
+}
+#header2-wrap{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f1f3f5;
+    height: 71px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #eef1f3;
+}
+#header2 {
+    height: 70px;
+    padding: 0;
+    font-family: "Pretendard";
+}
+#header2 {
+    width: 1200px;
+    margin: 0 auto;
+}
+#header2 #header2-ctn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header2-ctn .logo{
+    width: 178px;
+    height: 60px;
+    background: url(https://www.home-learn.co.kr/front/imgs/common/logo_header_2023.svg) no-repeat left;
+    background-size: contain;
+    cursor: pointer;
+}
+#gnbwrap{
+    position: relative;
+    z-index: 9;
+    width: 847px;
+    height: 70px;
+    font-size: 17px;
+    line-height: 35px;
+    top : 20px;
+}
+#gnb{
+    display: flex;
+    border-collapse: collapse;
+    justify-content: space-between;
+    background-color: white;
+}
+/*  */
+.none{
+    display: none;
+}
+/* 네비바 히든 영역 */
+ #gnb>#ctn{
+    display: none;
+    width: 2100px;
+    height: 422px;
+    left: -1000px;
+    top : 30px;
+    z-index: 3;
+    background-color: white;
+    position: absolute;
+    overflow: hidden;
+} 
+#gnbwrap #gnb ul{
+    display: none;
+    position: absolute;
+    top: 40px;
+    z-index: 5;
+    height: 358px;
+    padding: 36px 0 0 0;
+    cursor: pointer;
+}
+#gnbWrapper #gnb>li {
+    vertical-align: top;
+}
+.block{
+    cursor: pointer;
+}
+#header3{
+    height: 48px;
+}
+#body1{
+    height: 615px;
+}
+#body1>#ctn{
+    width: 100%;
+}
+#body1>#ctn>#ctn-ani{
+    width: 100%;
+    text-align: center;
+}
+#body1>#ctn>#ctn-ani>img{
+    width: 100%;
+}
+#body1>#ctn>#ctn-ani>.object{
+    display: block;
+    position: absolute;
+    top: 320px;
+    right: 570px;
+    transform: scale(0.6);
+    animation: top_scale 0.6s ease-in-out 1s both, top_updown 0.8s infinite alternate 1.5s;
+}
+#body1>#ctn>#ctn-ani>.object>img{
+    width: 100%;
+}
+@keyframes top_scale{
+    0% {
+        transform: scale(0.6);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
+@keyframes top_updown{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+#body2{
+    background: url(https://www.home-learn.co.kr/front/imgs/ai_tutor_2023//img_sec1_bg.png);
+    background-position: center;
+}
+#body2{
+    height: 672px;
+    align-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+#body2>#ctn-wrap{
+    height: 512px;
+    width: 100%;
+    padding-top : 100px;
+    align-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#body2>#ctn-wrap>.ctn1 {
+  display: flex;
+  width: 5000px;
+  height: 226px;
+  overflow: hidden;
+  padding-top: 35px;
+}
+
+#body2 .slide1-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loop1 120s linear infinite;
+  -webkit-animation: loop1 120s linear infinite;
+}
+
+#body2 .slide1-image {
+  width: 323px;
+  height: 191px;
+  margin: 30px;
+}
+
+#body2 .slide1-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 키프레임은 제일 하단에 작성 */
+@keyframes loop1 {
+  from {
+      transform: translateX(-80%);
+    }
+    to {
+      transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes loop1 {
+  from {
+      transform: translateX(-80%);
+    }
+    to {
+      transform: translateX(0);
+  }
+}
+
+#body2>#ctn-wrap>.ctn2 {
+    display: flex;
+    width: 5000px;
+    height: 226px;
+    overflow: hidden;
+    padding-top: 25px;
+  }
+  
+  #body2 .slide2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loop 1200s linear infinite reverse;
+    -webkit-animation: loop 120s linear infinite reverse;
+  }
+  
+  #body2 .slide2-image {
+    width: 323px;
+    height: 191px;
+    margin: 30px;
+  }
+  
+  #body2 .slide2-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @keyframes loop {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+  }
+  
+  @-webkit-keyframes loop {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+  }
+#body2>#ctn-wrap>#ctn2{
+    width: 100%;
+    height: 156px;
+}
+
+
+/*   body 3   */
+#body3{
+    width: 100%;
+    height: 719px;
+    text-align: center;
+    position: relative;
+}
+#body3>#body3-wrap{
+    padding : 90px;
+}
+/* hidden */
+#body3 .hd{
+    /* position: absolute; */
+    position: fixed; 
+    z-index: 100;
+    display: none;
+    width: 100%;
+    height: 196px;
+    font-family: "Pretendard";
+    font-size: 22px;
+    top :0;
+    transition:.1s linear;
+}
+
+/* .show-hd {
+    display: block;
+    position: fixed;
+} */
+#body3>.hd>.hd-fl{
+    height: 196px;
+    display: flex;    
+    justify-content: center;
+    background-color: #eef1f3;
+    padding-top: 35px;
+}
+.hd li{
+    width: 290px;
+    height: 129px;
+    margin-right: 13px;
+    background-color: white;
+    cursor: pointer;
+}
+.hd h4{
+    padding-top: 40px;
+}
+/* */
+/*#body3>#body3-wrap>#ctn-text{
+    text-align: center;
+}*/
+#body3>#body3-wrap>#ctn-text>h1{
+    padding: 15px 0;
+    font-size: 60px;
+    color: white;
+    letter-spacing: -4px;
+}
+#body3>#body3-wrap>#ctn-text>span{
+    font-size: 24px;
+    color: white;
+    letter-spacing: -2px;
+}
+#body3>#body3-wrap>#ctn-nav>.tab-nav{
+    font-family: "Pretendard";
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+#body3-wrap li{
+    position: relative;
+    width: 290px;
+    height: 278px;
+    margin-right: 13px;
+    background-color: white;
+}
+#body3 li>a *{
+    padding: 95px 0 65px 0;  
+}
+#body3-wrap h4{  
+    font-family: "Pretendard";  
+    font-size: 26px;
+}
+#co1{
+    color: #ff6833;
+}
+#co2{
+    color: #ffb600;
+}
+#co3{
+    color: #5562ff;
+}
+#co4{
+    color: #0ec85d;
+}
+#body3 small{
+    font-family: "Pretendard";
+    position: absolute;
+    font-size: 20px;
+    left : 0;
+    right: 0;
+    bottom: -20px;
+}
+#body3 img{
+    display: block;
+    position: absolute;
+    left : 125px;
+    top : 30px
+}
+/* .fixed{
+    position: fixed;
+    width: 100%;
+    top: -230px;
+    padding: 40px 0 40px 0;
+    margin: 0;
+    background: #eef1f3;
+    z-index: 8;
+    bottom: auto;
+    right: 0px;
+    transition:.2s ease-in-out;
+}
+.fixed1{
+    position: fixed;
+} */
+/* .hd{
+    font-family: "Pretendard";
+    display: block;
+    position: fixed;
+}
+.hd div{
+    width: 278px;
+    height: 129px;
+}
+.hd h6{
+    font-size: 22px;
+}
+.hd {
+    z-index: 9;
+    background-color: white;
+} */
+#body4{
+    width: 100%;
+    height: 1036px;
+    padding: 176px 0 110px;
+}
+#body4>#ctn{
+    font-family: "Pretendard";
+    padding : 0 40px;
+    text-align: center;
+}
+#body4>#ctn>#ctn-text{
+    font-family: "Pretendard";
+    text-align: center;
+}
+#body4>#ctn>#ctn-text>h4{
+    font-family: "Pretendard";
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: normal;
+}
+#body4>#ctn>#ctn-text>h2{
+    font-family: "Pretendard";
+    margin: 10px 0 20px;
+    color: #000;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: normal;
+}
+#body4>#ctn>#ctn-text>h2 span{
+    font-family: "Pretendard";
+    color : #ff6833;
+}
+#body4>#ctn>#ctn-text>span{
+    display: block;
+    font-family: "Pretendard";
+    color: #000;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: normal;
+}
+#body4 .box{
+    background: url("https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec4_slide_bg.png") no-repeat center;
+    width: 100%;
+    height: 510px;
+    margin: 40px auto 0;
+}
+#body4 .box-slider{
+    max-width: 740px;
+    margin: 0 auto;
+    padding-bottom: 44px;
+}
+#body5{
+    width: 100%;
+    height: 961px;
+    padding: 0 0 110px;
+    background: url("https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec5_bg.png");
+}
+#body5>#ctn>img{
+    padding: 100px 0 0;
+    margin-bottom: 35px;
+}
+#body5>#ctn{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+    text-align: center;
+}
+#body5>#ctn>#ctn-text{
+    text-align: center;
+}
+#body5>#ctn>#ctn-text h4{
+    font-family: "Pretendard";
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: normal;
+}
+#body5>#ctn>#ctn-text h2{
+    font-family: "Pretendard";
+    margin: 10px 0 16px;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: normal;
+}
+#body5>#ctn>#ctn-text>.box{
+    max-width: 1070px;
+    margin: 48px auto 0;
+    padding: 44px 0 46px 47px;
+    background: #fff;
+    border-radius: 30px;
+}
+#body5>#ctn>#ctn-text>.box>span{
+    display: block;
+    padding-left: 15px;
+    font-family: "Pretendard";
+    color: #000;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: normal;
+    text-align: left;
+}
+#body5>#ctn>#ctn-text>.box>span>b{
+    color: #9bdf4c;
+}
+#body5>#ctn>#ctn-text>.box>span:nth-child(2) b{
+    color: #ffb600;
+}
+#body5>#ctn>#ctn-text>.box>.box-icon{
+    display: block;
+    position: absolute;
+    right: 300px;
+}
+#body6{
+    width: 100%;
+    height: 1157px;
+    padding: 0 0 110px;
+}
+#body6>#ctn{
+    width: 100%;
+    height: 1047px;
+    text-align: center;
+}
+#body6>#ctn>img{
+    padding: 100px 0 0;
+    margin-bottom: 35px;
+    align-content: center;
+}
+#body6>#ctn h4{
+    font-family: "Pretendard";
+    color: #000;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: normal;
+}
+#body6>#ctn h2{
+    margin: 25px 0 50px;
+    font-family: "Pretendard";
+    color: #000;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: normal;
+}
+#body6>#ctn>#ctn-text>.box{
+    height: 450px;
+    background: url(https://www.home-learn.co.kr/front/imgs/ai_tutor_2023/img_sec7_box.png);
+}
+#body6>#ctn>#ctn-text span{
+    display: block;
+    margin: 50px 0 20px;
+    font-family: "Pretendard";
+    color: #000;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: normal;
+}
+#body6>#ctn>#ctn-text b{
+    font-weight: 600;
+}
+#body6>#ctn>#ctn-text>h2>span{
+    color : #0ec85d;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 0px;
+    
+}
+
+#body6>#ctn>#ctn-text>span>b>h{
+    color: #0ec85d;
+}
+#body6>#ctn>#ctn-text small{
+    font-family: "Pretendard";
+    color: #b5b5b5;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: normal;
+}
+  #footer_1{
+    position: fixed;
+    bottom:0;
+    top: 45%;
+    left: 90%;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    float:right;
+  }

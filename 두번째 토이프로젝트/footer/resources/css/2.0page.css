@@ -1,0 +1,512 @@
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+.wrap {
+    position: relative;
+}
+.header{
+    height: 42px;
+    border-bottom: 1px solid #ededed;
+}
+.header>.header_wrap{
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 42px;
+    margin: 0 auto;
+}
+.navi {
+    width: 1200px;
+    height: 66px;
+    line-height: 66px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.navi>div{
+    line-height: 86px;
+    overflow: hidden;
+}
+.content1{
+    height: 744px;
+    background-color: rgb(34,34,34);
+}
+.content1>.inside{
+    height: 100%;
+    width: 100%;
+    background: url(https://xcdn.home-learn.com/sigongweb/nhome/front/landing/2023/edu/imgs/img_top.jpg) no-repeat;
+    background-position: center center;
+    text-align: center;
+}
+.content1>.inside>img{
+    margin-top: 488px;
+    cursor: pointer;
+}
+.content2{
+    height: 730px;
+    background-color: rgb(247,251,255);
+    padding: 80px 0;
+}
+.content2>.inside{
+    margin: 0 auto;
+    height: 100%;
+    width: 1200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.content2>.inside>.bubble{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+}
+.content2>.inside>.bubble>img {opacity: 0;}
+.bubble1{ top: 46px; left: 110px; }
+.bubble2{ top: 46px; left: 480px; }
+.bubble3{ top: 46px; left: 820px; }
+.bubble4{ top: 456px; left: 110px; }
+.bubble5{ top: 516px; left: 480px; }
+.bubble6{ top: 456px; left: 820px; }
+
+.content3{
+    height: 699px;
+    background-color: rgb(230,242,255);
+    text-align: center;
+    padding-top: 80px;
+}
+.content4{
+    height: 850px;
+    background-color: rgb(245,246,250);
+    text-align: center;
+    padding-top: 170px;
+}
+.logo_obj{
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+    background-image: url(https://www.home-learn.co.kr/front/imgs/common/logo_header_2023.svg);
+}
+.logo_clover{
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    background-image: url(https://www.home-learn.co.kr/front/imgs/common/logo_header_2023.svg);
+    background-position: 0 -25px;
+    margin-top: 100px;
+}
+.content4>h3{
+    margin: 20px 0;
+}
+.content4>h4{
+    margin-top: 40px;
+}
+.content4>.rollingWrap {
+    margin-top: 80px;
+    height: 340px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.content4>.rollingWrap>img{
+    margin: 0 50px;
+    height: 340px;
+    position: absolute;
+}
+.content5{
+    height: 1140px;
+    text-align: center;
+    padding: 100px 0;
+}
+.content5>h3{
+    margin: 30px 0;
+}
+.content6{
+    height: 1430px;
+    background-color: rgb(14,213,93);
+    background-position: center center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.content6>.text{
+    width: 1200px;
+    height: 170px;
+    margin-top: 140px;
+}
+.content6>.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(https://www.home-learn.co.kr/front/imgs/main_2023/bg_review.png) no-repeat;
+    background-position: center center;
+    display: flex;
+}
+.content6>.back>.slick{
+    width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 380px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.content6>.back>.slick>div{
+    height: 100%;
+    
+}
+
+.slick-prev, .slick-next {
+    border: none;
+    background-color: #fff;
+    width: 200px;
+    height: 40px;
+    border-radius: 3em;
+    margin: 10px;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.content6>.back>.slick .slick-prev>img, .content6>.back>.slick .slick-next>img {
+    width: 14px;
+    height: 24px;
+}
+.content6>.back>.slick .review{
+    border-radius: 3em;
+    height: 400px;
+    margin-right: 20px;
+    text-align: center;
+    justify-content: center;
+    font-family: pretendard;
+    font-size: 13pt;
+    font-weight: 400;
+    margin: 25px 12px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: relative;
+}
+.slick .reviewContent{
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+.slick .review h4{
+    color: gray;
+    font-size: 12pt;
+    font-weight: 100;
+}
+.slick .review h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.slick .star{
+    background: url('https://www.home-learn.co.kr/front/imgs/main_2023/img_review_grade.png') no-repeat;
+    width: 96px;
+    height: 14px;
+    margin: 0 auto;
+}
+
+.slick .more{
+    display: none;
+}
+
+/* 슬릭2 */
+.content6>.back>.slick .slick-now{
+    margin: 23px 12px 0;
+    transform: scale(1.1);
+}
+
+.slick-now .star{
+    background: url('https://www.home-learn.co.kr/front/imgs/main_2023/img_review_grade_on.png') no-repeat;
+    background-size: contain;
+    width: 156px;
+    height: 34px;
+}
+
+.slick .reviewContent{
+    width: 100%;
+    margin-top: -40px;
+    align-items: center;
+    position: relative;
+}
+
+.slick-now .more {
+    display: block;
+    background-color: rgb(241,243,245);
+    color: rgb(255,104,51);
+    font-weight: bold;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    cursor: pointer;
+}
+
+.slick-now h2{ color: rgb(255,104,51)}
+
+
+.content7{
+    text-align: center;
+    padding: 150px 0;
+}
+.content7>.table{
+    width: 950px;
+    margin: 0 auto;
+    text-align: left;
+}
+.free{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: pretendard;
+    font-size: 16pt;
+    font-weight: 400;
+    color: #333;
+}
+.free span{
+    color: #ff6833; 
+}
+.free input{
+    padding: 15px;
+    border: 1px solid #999;
+    font-size: 14pt;
+}
+.free td{
+    padding: 10px;
+}
+
+.free .number{
+    background-color: #222;
+    color: white;
+    height: 56px;
+    width: 150px;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.free h5{
+    background-color: #ff6833;
+    display: inline;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;   
+}
+
+.free h6{
+    font-size: 12pt;
+    padding: 0;
+    margin: 5px 0 0 0;
+    font-weight: unset;
+}
+
+input[type="radio"]{
+    vertical-align: middle;
+    appearance: none;
+    width: 1.5em;
+    height: 1.5em;
+    border: none;
+    background-image: url('https://www.home-learn.co.kr/front/imgs/common/rdoui_mark.png');
+    background-size: cover;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked{
+    background-image: url('https://www.home-learn.co.kr/front/imgs/common/rdoui_mark_on.png');
+    border: none;
+    background-size: cover;
+}
+
+input[type="radio"]+label{
+    font-weight: 600;
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    vertical-align: middle;
+    appearance: none;
+    width: 1.5em;
+    height: 1.5em;
+    border: none;
+    background-image: url('https://www.home-learn.co.kr/front/imgs/common/chkui_mark.png');
+    background-size: cover;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked{
+    background-image: url('https://www.home-learn.co.kr/front/imgs/common/chkui_mark_on.png');
+    border: none;
+    background-size: cover;
+}
+input[type="checkbox"]+label{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.table .detail{
+    color: #a7a7a7;
+    cursor: pointer;
+}
+
+.detailContent {
+    resize: none;
+    font-size: 12pt;
+    font-family: pretendard;
+    font-weight: 400;
+    margin: 0px;
+    width: 740px;
+    height: 100px;
+    color: #AEAEAE;
+    padding: 30px;
+    line-height: 30px;
+}
+.detailWrap {display:none;}
+
+.timer{
+    height: 85px;
+    width: 100%;
+    background-color: rgb(85,98,255);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: pretendard;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgb(56,66,226);
+    user-select: none;
+    cursor: pointer;
+}
+.timer>.time{
+    background-color: black;
+    color: white;
+    border-radius: 2em;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+    font-family: pretendard;
+    margin-right: 20px;
+    text-shadow: none;
+}
+
+.timer>.arrow{
+    background-image: url('resources/img/arrow.png');
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+
+/* 글꼴관련 css */
+.header, .header a{
+    font-size: 13px;
+    font-family: arial;
+    color: black;
+    text-decoration-line: none;
+}
+.navi a{
+    font-size: 18px;
+    font-family: pretendard;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+.sub{
+    font-size: 37px;
+    font-family: pretendard;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 500;
+}
+.title{
+    font-size: 63px;
+    font-family: pretendard;
+    padding: 0px;
+    margin: 0px;
+}
+.small{
+    font-size: 24px;
+    font-family: pretendard;
+    font-weight: 400;
+    padding: 0px;
+    margin: 0px;
+}
+.content5>h6{
+    font-size: 30px;
+    font-family: pretendard;
+    font-weight: 500;
+    padding: 0px;
+    margin: 20px 0 5px 0;
+}
+.content5>h5{
+    font-size: 45px;
+    font-family: pretendard;
+    font-weight: 800;
+    padding: 0px;
+    margin: 0px;
+    color: #0ed55d;
+}
+.content6>.text>h2{
+    font-size: 54px;
+    font-family: pretendard;
+    font-weight: 300;
+    padding: 0px;
+    color: #fff;
+    margin: 14px 0;
+}
+.purple{ color: #5461ff; }
+.orange{ color: #ff6833; }
+.yellowgreen { color: #0ed55d }
+.yellow { color: #eeff00}
+.gray { color: #a7a7a7}
+
+/* slick */
+.slickWrapper{
+    margin: 40px 0;
+}
+.slick{
+    display: flex;
+    justify-content: center;
+}
+.slick img{
+    width: 580px;
+}
+
+.slick-dots { 
+    position: absolute; 
+    bottom: -160px; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.slick-dots li { 
+    float: left;
+    margin-right: 22px;
+    list-style-type: none;
+}
+
+.slick-dots li button { 
+    background: #ededed; 
+    width: 14px; 
+    height: 14px; 
+    border-radius: 50%; 
+    border: none; 
+    text-indent:-9999px;
+}
+.slick-dots li.slick-active button { background: #ff6833; } 
